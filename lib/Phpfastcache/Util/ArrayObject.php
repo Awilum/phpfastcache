@@ -107,6 +107,7 @@ class ArrayObject implements ArrayAccess, Iterator, Countable
      * @param mixed $offset
      * @return mixed|null
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->array[$offset] ?? null;
